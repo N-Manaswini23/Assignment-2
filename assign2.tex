@@ -181,7 +181,8 @@ Substituting $x=\{0,1,2,3\}$ in the piecewise cumulative distribution function.\
 &x=0 \implies F(0)=\frac{x}{2}=0\\
 &x=1 \implies F(1)=\frac{3}{5}\\
 &x=2 \implies F(2)=\frac{1}{2}+\frac{x}{8}=\frac{1}{2}+\frac{2}{8}=\frac{3}{4}\\
-&x=3 \implies F(3)=1 \label{1}
+&x=3 \implies F(3)=1 \label{1} \\
+&x=4 \implies F(4)=1 
 \end{align}
 we get $F(x)$ values at $x$ as respresented in table \eqref{table:2}
 
@@ -200,6 +201,8 @@ S.No & $F(x)$  & value of $value of F(X)$\\
 3 &  $F(2))$ & $\frac{3}{4}$ \\
 \hline
 4 & $F(3)$ & $1$ \\
+\hline
+5 & $F(4)$ & $1$ \\
 \hline
 \end{tabular} 
 }
@@ -260,11 +263,25 @@ P(2 \leq X <4) &=  P(3<X<4) + 1  - P(0 \leq X <2)\\
 \therefore P(2 \leq X <4) &= \frac{2}{5}
 \end{align}
 
+\section*{VERIFICATION IF $P(2 \leq X <4)=F(4)-F(2)$ }
+Here we take $F(4)=1,F(2)=P(0 \leq X <2)=\frac{3}{5}$ because we need to find $P(2 \leq X <4)$, here $X=2$ is included.If we use $F(2)=\frac{3}{4}$ then we obtain $P(2 < X <4)$.
+\begin{align}
+F(4)-F(2) &= 1 - \frac{3}{5}\\
+&= \frac{2}{5}\\
+&= P(2 \leq X <4)\\
+\therefore P(2 \leq X <4)&=F(4)-F(2) 
+\end{align}
+\section*{PROOF}
+\begin{align}
+P(2 \leq X <4)&= P(0 \leq X <4)-P(0 \leq X <2)\\
+&=F(4)-F(2)
+\end{align}
+Hence proved.
 
 
 
 \begin{figure}[htb!]
-\includegraphics[width=0.58\textwidth]{assignment2.png}
+\includegraphics[width=0.55\textwidth]{assignment2.png}
 \end{figure}
 
 \end{document}
