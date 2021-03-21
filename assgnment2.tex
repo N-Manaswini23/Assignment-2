@@ -123,7 +123,7 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download python code from 
 \begin{lstlisting}
-https://github.com/N-Manaswini23/Assignment-2/blob/main/assignment2%20(2).py
+https://github.com/N-Manaswini23/Assignment-2/blob/main/assign2%20(1).py
 \end{lstlisting}
 %
 
@@ -150,7 +150,7 @@ Let X be a binomial random variable. \\
 Cumulative distribution function F(x) is given in \eqref{1}\\
 CDF(cumulative distribution function) of a random variable X is defined as follows:\\
 \begin{align}
-F_X(r) = \Pr (X \leq r) = \int _{- \infty }^{r}f_x(t).dt 
+F_X(r) = \Pr (X \leq r) 
 \end{align}
 where $f_x$ is probability density function.
 \begin{table}[h!]
@@ -179,17 +179,12 @@ S.No & x(range) & F(x) \\
 We need to find $P(2 \leq X <4)$,we know that\\
 \begin{align}
 F(4)-F(2)&=P(X \leq 4)-P(X \leq 2)\\
-&=\int _{- \infty }^{4}f_x(t).dt -\int _{- \infty }^{2}f_x(t).dt \\
-&=\int _{2 }^{4}f_x(t).dt \\
 &= P(2 <x<4) \label{int}
 \end{align}
 But we need to find $ P(2 \leq x<4) $
 \begin{align}
-P(2 \leq x<4)&=P(2 <x<4)+P(X=2)\\
-P(2 \leq x<4)&=F(4)-F(2)+P(X=2)  \\
-P(X=2)&= \int _{2 }^{2}f_x(t).dt \\
-&=0 \label{2}\\
-\therefore P(2 \leq x<4)&=F(4)-F(2) \label{eq1}
+P(2 \leq x<4)&=P(2 < x<4)\\
+&=F(4)-F(2) \label{eq1}
 \end{align}
 According to piecewise function given in the question:\\
 
@@ -197,7 +192,6 @@ According to piecewise function given in the question:\\
 4&>3\\
 \therefore F(4)&=1 \label{3} \\
 F(2)&=\frac{1}{2}+ \frac{x}{8}\\
- &=\frac{1}{2}+ \frac{2}{8}\\
  &=\frac{3}{4} \label{4}
 \end{align}
 Substituting \eqref{4} and \eqref{3} in \eqref{eq1}
@@ -209,10 +203,9 @@ P(2 \leq X <4)&=F(4)-F(2)\\
 \end{align}
 
 
-
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=0.58\textwidth]{assign2.png}
+\includegraphics[width=0.55\textwidth]{assignment2.png}
 \end{center}
 \end{figure}
 
