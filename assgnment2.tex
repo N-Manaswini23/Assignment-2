@@ -113,7 +113,7 @@ columns=fullflexible
      \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
      \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 \vspace{3cm}
-\title{Assignment2}%number
+\title{Assignment3}%number
 \author{CS20Btech11035 -NYALAPOGULA MANASWINI}
 \maketitle
 \newpage
@@ -123,49 +123,69 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download python code from 
 \begin{lstlisting}
-https://github.com/N-Manaswini23/Assignment-2/blob/main/assign2%20(1).py
+https://github.com/N-Manaswini23/assignment3/blob/main/assignment3.py
 \end{lstlisting}
 %
 
-\section*{GATE QUESTION 63}
-Let the random variable X have the distribution function:
-\begin{align}
-F(x) = \begin{cases}
-0 & x < 0
-\\
-\frac{x}{2} & 0 \leq x < 1 
-\\
-\frac{3}{5} & 1 \leq x < 2
-\\
-\frac{1}{2}+\frac{x}{8} & 2 \leq x < 3
-\\
-1 & x \geq 3
-\end{cases} \label{1}
-\end{align}
-Then $P (2 \leq X \leq 4)$ is equal to
-
+\section*{GATE EC QUESTION 63}
+Suppose X is a real-valued random variable.Which of the following values CANNOT be attained by$ E[X] $ and $ E[X^2] $ respectively?
+\begin{enumerate}
+\item[(A)] 0 and 1   
+\item[(B)] $\frac{1}{2}$ and $\frac{1}{3}$
+\item[(C)] 2 and 3
+\item[(D)] 2 and 5
+\end{enumerate}
 
 \section*{SOLUTION}
-Let X be a binomial random variable. \\
-Cumulative distribution function F(x) is given in \eqref{1}\\
-CDF(cumulative distribution function) of a random variable X is defined as follows:\\
+We know that 
 \begin{align}
-F_X(r) = \Pr (X \leq r) 
+var(X)&=E\sbrak{X-E(X)}^2 \label{1}
 \end{align}
-we need to find $ P(2 \leq x<4) $
+From \eqref{1} , we can conclude that 
 \begin{align}
-P(2 \leq x<4)&=F(4)-F(2) \label{eq1} \\
-&=1- (\frac{1}{2}+\frac{2}{8})\\
-&= \frac{1}{4}\\
-\therefore P(2 \leq X <4)&=\frac{1}{4}\\
+var(X) \geq 0 \label{2}
 \end{align}
+We know that 
+\begin{align}
+var(X)&=E[X^2]-(E[X])^2 \label{3}
+\end{align}
+From \eqref{2}
+\begin{align}
+E[X^2]-(E[X])^2 & \geq 0
+\end{align}
+\begin{enumerate}
+\item[(A)] $E[X]=0$ and $E[X^2]=1$
+\begin{align}
+E[X^2]-(E[X])^2 &=1 - 0\\
+&=1\\
+\therefore E[X^2]-(E[X])^2 \geq 0
+\end{align}
+$\therefore$ $E[X]=0$ and $E[X^2]=1$ can be attained
+\item[(B)] $E[X]=\frac{1}{2}$ and $E[X^2]=\frac{1}{3}$
+\begin{align}
+E[X^2]-(E[X])^2 &=\frac{1}{3} - \frac{1}{4}\\
+&=\frac{1}{12}\\
+\therefore E[X^2]-(E[X])^2 \geq 0
+\end{align}
+$\therefore$ $E[X]=\frac{1}{2}$ and $E[X^2]=\frac{1}{3}$ can be attained
+\item[(C)] $E[X]=2$ and $E[X^2]=3$
+\begin{align}
+E[X^2]-(E[X])^2 &=3 - 4\\
+&=-1\\
+\therefore E[X^2]-(E[X])^2 \leq 0
+\end{align}
+$\therefore$ $E[X]=2$ and $E[X^2]=3$ cannot be attained
+\item[(D)] $E[X]=2$ and $E[X^2]=5$
+\begin{align}
+E[X^2]-(E[X])^2 &=5 - 4\\
+&=1\\
+\therefore E[X^2]-(E[X])^2 \geq 0
+\end{align}
+$\therefore$ $E[X]=2$ and $E[X^2]=5$ can be attained\\
+$\therefore$ $E[X]=2$ and $E[X^2]=3$ cannot be attained
+\end{enumerate}
 
 
-\begin{figure}[htb!]
-\begin{center}
-\includegraphics[width=0.55\textwidth]{assignment2.png}
-\end{center}
-\end{figure}
+
 
 \end{document}
-
