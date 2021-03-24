@@ -141,20 +141,20 @@ Suppose X is a real-valued random variable.Which of the following values CANNOT 
 \end{enumerate}
 
 \section*{SOLUTION}
-For uniform distribution X,
+We know that
 \begin{align}
-E[X^k]&= \int_{-\infty}^{\infty} x^k \mathrm{dF_X(x)} \label{eq:1} \\
-var(X)&= \int_{-\infty}^{\infty} (X-E[X])^2\mathrm{dF_X(x)} \\
-&=\int_{-\infty}^{\infty}X^2\mathrm{dF_X(x)}  - 2E[X]\int_{-\infty}^{\infty}X \mathrm{dF_X(x)}   \notag \\
-& +(E[X])^2\int_{-\infty}^{\infty} \mathrm{dF_X(x)} \\
-&=E[X^2]-2(E[X])^2+(E[X])^2 \\
+var(X)&=E[(X-E[X])^2] \label{eq:1} \\
 var(X)&=E[X^2]-(E[X])^2 \label{1}
 \end{align}
-From \eqref{1} , we can conclude that 
+For uniform distribution in the interval $[a,b]$
+\begin{align}
+var(X) &= \frac{{(b-a)}^2}{12} \label{eq:2}
+\end{align}
+From \eqref{eq:1},\eqref{eq:2}(for uniform distribution) , we can conclude that 
 \begin{align}
 var(X) \geq 0 \label{2}
 \end{align}
-From \eqref{2}
+From \eqref{1}
 \begin{align}
 E[X^2]-(E[X])^2 & \geq 0
 \end{align}
