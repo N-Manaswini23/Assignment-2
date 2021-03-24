@@ -134,10 +134,10 @@ https://github.com/N-Manaswini23/Assignment-2/blob/main/assgnment2.tex
 \section*{GATE EC QUESTION 63}
 Suppose X is a real-valued random variable.Which of the following values CANNOT be attained by$ E[X] $ and $ E[X^2] $ respectively?
 \begin{enumerate}
-\item[(A)] 0 and 1   
-\item[(B)] $\frac{1}{2}$ and $\frac{1}{3}$
-\item[(C)] 2 and 3
-\item[(D)] 2 and 5
+\item 0 and 1   
+\item  $\frac{1}{2}$ and $\frac{1}{3}$
+\item  2 and 3
+\item 2 and 5
 \end{enumerate}
 
 \section*{SOLUTION}
@@ -150,34 +150,36 @@ For uniform distribution in the interval $[a,b]$
 \begin{align}
 var(X) &= \frac{{(b-a)}^2}{12} \label{eq:2}
 \end{align}
-From \eqref{eq:1},\eqref{eq:2}(for uniform distribution) , we can conclude that 
+For uniform distribution,$(b-a)^2 \geq 0$\\
+By definition of variance,it is average value of ${(X-E[X])}^2$.\\
+Since ${(X-E[X])}^2 \geq 0$ ,average $E[(X-E[X])^2] \geq 0$.
 \begin{align}
-var(X) & \geq 0 \label{2} \\
+\therefore var(X) & \geq 0 \label{2} \\
 \therefore E[X^2]-(E[X])^2 & \geq 0 \label{3}
 \end{align}
 \begin{enumerate}
-\item[(A)] $E[X]=0$ and $E[X^2]=1$
+\item  $E[X]=0$ and $E[X^2]=1$
 \begin{align}
 E[X^2]-(E[X])^2 &=1 - 0\\
 &=1\\
 \therefore E[X^2]-(E[X])^2 &\geq 0
 \end{align}
 $\therefore$ $E[X]=0$ and $E[X^2]=1$ can be attained \\
-\item[(B)] $E[X]=\frac{1}{2}$ and $E[X^2]=\frac{1}{3}$
+\item  $E[X]=\frac{1}{2}$ and $E[X^2] =\frac{1}{3}$
 \begin{align}
 E[X^2]-(E[X])^2 &=\frac{1}{3} - \frac{1}{4}\\
 &=\frac{1}{12}\\
 \therefore E[X^2]-(E[X])^2 &\geq 0
 \end{align}
 $\therefore$ $E[X]=\frac{1}{2}$ and $E[X^2]=\frac{1}{3}$ can be attained \\
-\item[(C)] $E[X]=2$ and $E[X^2]=3$
+\item  $E[X]=2$ and $E[X^2]=3$
 \begin{align}
 E[X^2]-(E[X])^2 &=3 - 4\\
 &=-1\\
 \therefore E[X^2]-(E[X])^2 &\leq 0
 \end{align}
 $\therefore$ $E[X]=2$ and $E[X^2]=3$ cannot be attained \\
-\item[(D)] $E[X]=2$ and $E[X^2]=5$
+\item  $E[X]=2$ and $E[X^2]=5$
 \begin{align}
 E[X^2]-(E[X])^2 &=5 - 4\\
 &=1\\
